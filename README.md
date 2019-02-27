@@ -1,2 +1,2 @@
-# vue-youzan
-用vue重构有赞商城
+# youzan
+vue重构有赞商城
