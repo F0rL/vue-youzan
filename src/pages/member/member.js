@@ -1,37 +1,13 @@
 import './member.css'
-//1.使用vue-router
+
 import Vue from 'vue'
-import Router from 'vue-router'
-Vue.use(Router)
+import router from './router'
+import store from './vuex'
 
-const routes = [{
-  path: '/',
-  component: require('./components/member.vue')
-},{
-  path: '/address',
-  component: require('./components/address.vue'),
-  children: [{
-    path: '',
-    // component: require('./components/all.vue')
-    redirect: 'all'
-  },{
-    path: 'all',
-    name: 'all',
-    component: require('./components/all.vue')
-  },{
-    path: 'form',
-    name: 'form',
-    component: require('./components/form.vue')
-  }]
-}]
 
-//2.创建router实例
-let router = new Router({
-  routes
-})
 
 new Vue({
   el: '#app',
-  router
-
+  router,
+  store
 })
