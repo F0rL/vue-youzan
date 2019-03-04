@@ -2,7 +2,7 @@
   "name": "maijia",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "tony <fangtao_2008@163.com>",
+  "author": "kuma",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
